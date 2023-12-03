@@ -1,7 +1,8 @@
+import "package:daily_projects/dashboard.dart";
 import "package:flutter/material.dart";
 
-void main(){
-  runApp(app)
+void main() {
+  runApp(dailyapp());
 }
 
 class dailyapp extends StatefulWidget {
@@ -14,6 +15,8 @@ class dailyapp extends StatefulWidget {
 class _dailyappState extends State<dailyapp> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      home: dashboard(),
+    );
   }
 }

@@ -17,9 +17,100 @@ class _dashboardState extends State<dashboard> {
           title: Text('Dashboard'),
         ),
         body: Container(
+          color: Colors.blue[200],
+          child: Column(
+            children: <Widget>[
+              ///first row
+              Expanded(
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        child: Text('Button 1'),
+                      ),
+                    ),
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {
+                          print('object');
+                        },
+                        child: Text('Button 2'),
+                      ),
+                    ),
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        child: Text('Button 3'),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
 
-        ) ,
+              ///first row end
+              ///second row
+              Expanded(
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        child: Text('Button 1'),
+                      ),
+                    ),
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {
+                          print('object');
+                        },
+                        child: Text('Button 2'),
+                      ),
+                    ),
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        child: Text('Button 3'),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+
+              ///second row end
+              ///third row
+              Expanded(
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        child: Text('Button 1'),
+                      ),
+                    ),
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {
+                          print('object');
+                        },
+                        child: Text('Button 2'),
+                      ),
+                    ),
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        child: Text('Button 3'),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+
+              ///third row end
+            ],
+          ),
+        ),
       ),
-    )
+    );
   }
 }
