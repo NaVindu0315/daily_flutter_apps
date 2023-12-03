@@ -1,8 +1,15 @@
 import "package:daily_projects/dashboard.dart";
 import "package:flutter/material.dart";
+import "package:hive/hive.dart";
+import "package:hive_flutter/adapters.dart";
 
-void main() {
+void main() async {
   runApp(dailyapp());
+  // init the hive
+  await Hive.initFlutter();
+
+  // open a box
+  var box = await Hive.openBox('mybox');
 }
 
 class dailyapp extends StatefulWidget {

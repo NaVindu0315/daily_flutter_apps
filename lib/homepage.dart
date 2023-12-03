@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-
-import '../util/dialog_box.dart';
+import 'dialogbox.dart';
 
 import 'database.dart';
 import "TodoTile.dart";
