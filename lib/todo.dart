@@ -13,6 +13,8 @@ class _todoappState extends State<todoapp> {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.yellow[200],
+
+        ///app bar
         appBar: AppBar(
           backgroundColor: Colors.yellow[300],
           title: Center(
@@ -21,6 +23,14 @@ class _todoappState extends State<todoapp> {
             style: TextStyle(color: Colors.black),
           )),
         ),
+
+        ///app bar end
+        ///body
+        body: ListView(
+          children: [ToDoTile],
+        ),
+
+        ///body end
       ),
     );
   }
