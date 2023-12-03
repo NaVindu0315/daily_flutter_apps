@@ -14,7 +14,12 @@ class _todoappState extends State<todoapp> {
       home: Scaffold(
         backgroundColor: Colors.yellow[200],
         appBar: AppBar(
-          title: Text('ToDO'),
+          backgroundColor: Colors.yellow[300],
+          title: Center(
+              child: Text(
+            'ToDo',
+            style: TextStyle(color: Colors.black),
+          )),
         ),
       ),
     );

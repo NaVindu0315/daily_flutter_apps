@@ -1,3 +1,5 @@
+import 'package:daily_projects/todo.dart';
+
 import 'main.dart';
 import 'package:flutter/material.dart';
 
@@ -26,8 +28,13 @@ class _dashboardState extends State<dashboard> {
                   children: [
                     Expanded(
                       child: ElevatedButton(
-                        onPressed: () {},
-                        child: Text('Button 1'),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => todoapp()),
+                          );
+                        },
+                        child: Text('Todo App'),
                       ),
                     ),
                     Expanded(
