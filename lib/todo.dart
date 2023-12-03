@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'TodoTile.dart';
+
 class todoapp extends StatefulWidget {
   const todoapp({Key? key}) : super(key: key);
 
@@ -27,7 +29,13 @@ class _todoappState extends State<todoapp> {
         ///app bar end
         ///body
         body: ListView(
-          children: [ToDoTile],
+          children: [
+            ToDoTile(
+                taskName: taskName,
+                taskCompleted: taskCompleted,
+                onChanged: onChanged,
+                deleteFunction: deleteFunction)
+          ],
         ),
 
         ///body end
