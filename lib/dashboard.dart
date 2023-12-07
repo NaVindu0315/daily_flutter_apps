@@ -43,7 +43,7 @@ class _dashboardState extends State<dashboard> {
                         onPressed: () {
                           print('object');
                         },
-                        child: Text('Button 2'),
+                        child: Text('Habit tracker'),
                       ),
                     ),
                     Expanded(
